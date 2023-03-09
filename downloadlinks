@@ -1,0 +1,9 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/column-formatting.schema.json",
+  "elmType": "a",
+  "txtContent": "Download",
+  "attributes": {
+    "target": "_blank",
+    "href": "=@currentWeb+'/_layouts/15/download.aspx?sourceurl='+[$FileRef]"
+  }
+}
