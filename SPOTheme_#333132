@@ -1,0 +1,29 @@
+#Connect to SPO
+Connect-SPOService -url https://uniofbuck-admin.sharepoint.com/
+
+$themepalette@{
+"themePrimary" = "#333132";
+"themeLighterAlt" = "#e7e5e6";
+"themeLighter" = "#d0cecf";
+"themeLight" = "#bab7b8";
+"themeTertiary" = "#a3a0a2";
+"themeSecondary" = "#8d8a8b";
+"themeDarkAlt" = "#767375";
+"themeDark" = "#605d5e";
+"themeDarker" = "#494748";
+"neutralLighterAlt" = "#faf9f8";
+"neutralLighter" = "#f3f2f1";
+"neutralLight" = "#edebe9";
+"neutralQuaternaryAlt" = "#e1dfdd";
+"neutralQuaternary" = "#d0d0d0";
+"neutralTertiaryAlt" = "#c8c6c4";
+"neutralTertiary" = "#a19f9d";
+"neutralSecondary" = "#605e5c";
+"neutralPrimaryAlt" = "#3b3a39";
+"neutralPrimary" = "#323130";
+"neutralDark" = "#201f1e";
+"black" = "#000000";
+"white" = "#ffffff";
+}
+
+Add-SPOTheme -Identity "Charc Theme" -Palette $themepalette -IsInverted $false
